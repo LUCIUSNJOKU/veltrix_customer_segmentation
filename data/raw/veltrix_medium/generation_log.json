@@ -1,0 +1,22 @@
+{
+  "scale": "medium",
+  "seed": 42,
+  "base_customers": 100000,
+  "tables": {
+    "locations": 36,
+    "agents": 300,
+    "customers": 102000,
+    "_answer_key_customer_persona": 102000,
+    "campaigns": 270,
+    "leads": 95804,
+    "interactions": 532789,
+    "properties": 16667,
+    "site_visits": 233593,
+    "transactions": 16665,
+    "payments": 106199,
+    "campaign_responses": 808953,
+    "web_sessions": 2003460,
+    "property_views": 15163137
+  },
+  "seconds": 26.8
+}
