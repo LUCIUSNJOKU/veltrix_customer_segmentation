@@ -1,3 +1,23 @@
+
+# Answer keys
 answer_key/
+
+# MLflow tracking
 mlruns/
+
+# Python virtual environment
 .venv/
+
+# Datasets
+data/
+
+# Streamlit application folder
+veltrix_streamlit/
+
+# Environment variables and secrets
+.env
+
+# Results and outputs
+Results/
+__pycache__/
+.ipynb_checkpoints/
