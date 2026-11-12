@@ -11,8 +11,8 @@ mlruns/
 # Datasets
 data/
 
-# Streamlit application folder
-veltrix_streamlit/
+# # Streamlit application folder
+# veltrix_streamlit/
 
 # Environment variables and secrets
 .env

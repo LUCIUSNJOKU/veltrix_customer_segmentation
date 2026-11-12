@@ -1,0 +1,16 @@
+table,column,issue,rows_affected,action
+leads,lead_source,28 spellings for 14 true sources,95804,mapped to 14 canonical sources (§1.3)
+customers,country_of_residence,26 labels incl. UK/England/GB/HK/UAE variants,102000,standardised (§1.3)
+customers,age_band,missing values,28096,flagged; budgets imputed in §4.1
+customers,occupation_sector,missing values,27378,flagged; budgets imputed in §4.1
+customers,stated_budget_gbp,missing values,51986,flagged; budgets imputed in §4.1
+customers,stated_rent_budget_pcm_gbp,missing values,88939,flagged; budgets imputed in §4.1
+customers,uk_region_of_residence,missing values,9596,flagged; budgets imputed in §4.1
+properties,size_sqm,missing values,671,not used in customer model
+properties,epc_rating,missing values,1193,not used in customer model
+interactions,response_time_min,missing on inbound rows,5830,median-imputed for modelling
+web_sessions,(whole table),table not supplied; property_views has no customer link,0,session features replaced by interaction/visit/campaign behaviour
+customers,email_sha256 / phone_sha256,duplicate customers sharing a hash,1427,merged to earliest customer_id (union-find)
+customers,profile,look-alike duplicates with no shared hash,170,queued for manual review
+customers,stated_budget_gbp,typos (extra zero / £k / stray leading 1),166,repaired by group-median plausibility rule
+customers,stated_rent_budget_pcm_gbp,annual figures entered as monthly,48,divided by 12
